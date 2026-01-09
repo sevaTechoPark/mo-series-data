@@ -1,8 +1,596 @@
-2026-01-09 14:19:00,329 [INFO] Бот запущен!
-2026-01-09 14:19:00,329 [INFO] Бот запущен!
-2026-01-09 14:19:12,987 [INFO] Бот запущен!
-2026-01-09 14:19:12,987 [INFO] Бот запущен!
-2026-01-09 14:19:32,847 [INFO] Бот запущен!
-2026-01-09 14:19:32,847 [INFO] Бот запущен!
-2026-01-09 14:19:44,279 [INFO] Бот запущен!
-2026-01-09 14:19:44,279 [INFO] Бот запущен!
+2026-01-09 15:35:12,804 [INFO] Бот запускается...
+2026-01-09 15:35:12,853 [INFO] Бот запущен!
+2026-01-09 15:35:14,111 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:19,112 [INFO] Проверка тикера NVDA: найдено строк 21
+2026-01-09 15:35:19,822 [ERROR] Непредвиденная ошибка в handle_message: name 'filename' is not defined
+Traceback (most recent call last):
+  File "/var/folders/wx/42h_hdjd4yq17pt5gxf_wqkr0000gq/T/ipykernel_37360/3807445087.py", line 23, in handle_message
+    save_ticker_history(ticker)
+  File "/var/folders/wx/42h_hdjd4yq17pt5gxf_wqkr0000gq/T/ipykernel_37360/708488564.py", line 20, in save_ticker_history
+    return filename
+           ^^^^^^^^
+NameError: name 'filename' is not defined
+2026-01-09 15:35:19,826 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:20,895 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:24,956 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:26,522 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:31,077 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:33,406 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:38,716 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:42,153 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:42,853 [INFO] Проверка тикера AAPL: найдено строк 21
+2026-01-09 15:35:43,470 [ERROR] Непредвиденная ошибка в handle_message: name 'filename' is not defined
+Traceback (most recent call last):
+  File "/var/folders/wx/42h_hdjd4yq17pt5gxf_wqkr0000gq/T/ipykernel_37360/3807445087.py", line 23, in handle_message
+    save_ticker_history(ticker)
+  File "/var/folders/wx/42h_hdjd4yq17pt5gxf_wqkr0000gq/T/ipykernel_37360/708488564.py", line 20, in save_ticker_history
+    return filename
+           ^^^^^^^^
+NameError: name 'filename' is not defined
+2026-01-09 15:35:45,583 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:49,648 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:54,894 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:35:59,500 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:36:07,264 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:36:11,379 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-01-09 15:36:22,956 [ERROR] Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 750, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 744, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/asyncio/tasks.py", line 314, in __step_run_and_handle_result
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_updater.py", line 371, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/v.papadyk/anaconda3/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running

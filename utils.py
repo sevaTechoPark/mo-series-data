@@ -28,9 +28,9 @@ def simulate_trading(prices, amount, dates=None):
                 'sell_price': sell_price,
                 'profit': (sell_price - buy_price) * shares
             })
-            i += 2  # переходим к следующей паре
+            i += 2
         else:
-            i += 1  # если не пара "минимум-максимум", двигаемся дальше
+            i += 1
 
     if len(actions) == 0 and len(prices) > 1:
         buy_idx = 0

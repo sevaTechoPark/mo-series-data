@@ -1,3 +1,4 @@
+import asyncio
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 
 from logger import logger
@@ -33,3 +34,7 @@ async def main_async():
         logger.exception(f"Ошибка при запуске main_async: {e}")
     finally:
         logger.info("Бот остановлен (выключен)")     
+
+
+if __name__ == "__main__":
+    asyncio.run(main_async())

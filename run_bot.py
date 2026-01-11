@@ -3,6 +3,12 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from logger import logger
 from telegram_handlers import start, handle_message, unknown
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Загружаем переменные из .env
+
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 async def error_handler(update, context):
     logger.error(msg="Exception while handling an update:", exc_info=context.error)
